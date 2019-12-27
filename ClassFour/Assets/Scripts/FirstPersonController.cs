@@ -13,11 +13,14 @@ public class FirstPersonController : MonoBehaviour
     public Shooter shooter;
     public GameObject gun;
     public Camera cameraTransform;
+    public float playerlife = 5;
+    public GameObject Screen;
+    private StateGame state = new StateGame();
     float angleX;
      void Start()
     {
         fpsRB = GetComponent<Rigidbody>();
-       
+        Screen = GetComponent<GameObject>();
      }
     // Update is called once per frame
     void Update()
@@ -27,7 +30,7 @@ public class FirstPersonController : MonoBehaviour
             fpsRB.AddForce (Vector3.up * jumpForce,ForceMode.Impulse);
             isOnTheGround = false;
         }
-        fpsRB.velocity = (transform.forward * speed * Input.GetAxis("Vertical") * Time.deltaTime) + (transform.right * speed * Input.GetAxis("Horizontal") * Time.deltaTime);
+        fpsRB.velocity = (transform.forward * speed * Input.GetAxis("Vertical") * Time.deltaTime) + (transform.right * speed * Input.GetAxis("Horizontal") * Time.deltaTime + (Vector3.up * fpsRB.velocity.y));
       //  transform.Translate((Vector3.forward*speed*Input.GetAxis("Vertical")*Time.deltaTime)+(Vector3.right*speed*Input.GetAxis("Horizontal")*Time.deltaTime));
 
 
@@ -51,6 +54,11 @@ public class FirstPersonController : MonoBehaviour
 
         if (collision.gameObject.tag == "Ground") {
             isOnTheGround = true;
+        }
+
+        if (collision.gameObject.tag == "Ground") {
+            playerlife -= 1;
+            state.die();
         }
     }
 

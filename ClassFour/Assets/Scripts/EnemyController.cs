@@ -9,6 +9,7 @@ public class EnemyController : MonoBehaviour
     private Animator enemyAnimator;
     private NavMeshAgent enemyAgent;
     private Transform playerTransform;
+    public GameObject player;
     public float countlife = 5f;
     public bool life = true;
     void Start()
@@ -45,5 +46,8 @@ public class EnemyController : MonoBehaviour
             enemyAnimator.SetBool("Vidas", life);
             Destroy(this.gameObject);
         }
+
+       
+
     }
 }

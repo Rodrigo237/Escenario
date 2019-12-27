@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\LifeBar.cs" />
     <Compile Include="Assets\Scripts\RayGenerator.cs" />
     <Compile Include="Assets\Scripts\Shooter.cs" />
+    <Compile Include="Assets\Scripts\StateGame.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonCamera.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonController.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
