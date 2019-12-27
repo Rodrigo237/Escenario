@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{AD803ACA-8F54-68EC-37D8-9933AC28070A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshComponents", "NavMeshComponents.csproj", "{034DEC78-F1C9-50DB-A2C1-A283C08EBB09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{AD803ACA-8F54-68EC-37D8-9933AC28070A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshComponentsEditor", "NavMeshComponentsEditor.csproj", "{0BD87E61-AA64-AB4D-DE75-C7B9C14F523D}"
 EndProject
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AD803ACA-8F54-68EC-37D8-9933AC28070A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD803ACA-8F54-68EC-37D8-9933AC28070A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD803ACA-8F54-68EC-37D8-9933AC28070A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD803ACA-8F54-68EC-37D8-9933AC28070A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{034DEC78-F1C9-50DB-A2C1-A283C08EBB09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{034DEC78-F1C9-50DB-A2C1-A283C08EBB09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{034DEC78-F1C9-50DB-A2C1-A283C08EBB09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{034DEC78-F1C9-50DB-A2C1-A283C08EBB09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD803ACA-8F54-68EC-37D8-9933AC28070A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD803ACA-8F54-68EC-37D8-9933AC28070A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD803ACA-8F54-68EC-37D8-9933AC28070A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD803ACA-8F54-68EC-37D8-9933AC28070A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0BD87E61-AA64-AB4D-DE75-C7B9C14F523D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0BD87E61-AA64-AB4D-DE75-C7B9C14F523D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BD87E61-AA64-AB4D-DE75-C7B9C14F523D}.Release|Any CPU.ActiveCfg = Release|Any CPU
